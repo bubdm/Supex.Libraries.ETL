@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4802E0C5-5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{2BF173E4-C209-4EFB-82A4-EE096BF0674E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supex.Libraries.Examples", "Supex.Libraries.SimpleExamples\Supex.Libraries.Examples.csproj", "{64662684-3F2B-4907-9DD3-861334488E1F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supex.Libraries.Examples", "Supex.Libraries.Examples\Supex.Libraries.Examples.csproj", "{64662684-3F2B-4907-9DD3-861334488E1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

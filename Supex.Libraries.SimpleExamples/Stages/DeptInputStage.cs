@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Supex.Libraries.ETL;
 
-namespace SimpleExamples.Stages
+namespace Supex.Libraries.Examples.Stages
 {
     public class DeptInputStage : InputStage
     {

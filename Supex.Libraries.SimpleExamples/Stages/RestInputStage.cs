@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Supex.Libraries.ETL;
 
-namespace SimpleExamples.Stages
+namespace Supex.Libraries.Examples.Stages
 {
     public class RestInputStage<TInput> : InputStage
     {

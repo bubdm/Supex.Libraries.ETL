@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SimpleExamples.Models;
-using SimpleExamples.Stages;
+using Supex.Libraries.Examples.Models;
+using Supex.Libraries.Examples.Stages;
 using Supex.Libraries.ETL;
 
-namespace SimpleExamples
+namespace Supex.Libraries.Examples
 {
     public class TransformerExampleJob : Job
     {

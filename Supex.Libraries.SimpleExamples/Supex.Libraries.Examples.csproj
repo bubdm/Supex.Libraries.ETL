@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D4EE677D-6035-4741-8DD6-FB735B3C63E7}</ProjectGuid>
+    <ProjectGuid>{64662684-3F2B-4907-9DD3-861334488E1F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DemoApp</RootNamespace>
-    <AssemblyName>DemoApp</AssemblyName>
+    <RootNamespace>Supex.Libraries.Examples</RootNamespace>
+    <AssemblyName>Supex.Libraries.Examples</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,21 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FunnelExampleJob.cs" />
+    <Compile Include="RemoveDuplicatesExampleJob.cs" />
+    <Compile Include="SortExampleJob.cs" />
+    <Compile Include="Stages\EmpInputStage.cs" />
+    <Compile Include="Stages\DeptInputStage.cs" />
+    <Compile Include="Stages\ConsoleOutputStage.cs" />
+    <Compile Include="CopyExampleJob.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="FilterExampleJob.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stages\RestInputStage.cs" />
+    <Compile Include="TransformerExampleJob.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Supex.Libraries.ETL\Supex.Libraries.ETL.csproj">
-      <Project>{eaee8176-3d27-4cfd-9bfd-5fd1eb17345a}</Project>
+      <Project>{EAEE8176-3D27-4CFD-9BFD-5FD1EB17345A}</Project>
       <Name>Supex.Libraries.ETL</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ComplexJobs\" />
-    <Folder Include="SimpleJobs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

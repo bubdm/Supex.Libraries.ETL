@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SimpleExamples.Models;
+using Supex.Libraries.Examples.Models;
 using Supex.Libraries.ETL;
 
-namespace SimpleExamples.Stages
+namespace Supex.Libraries.Examples.Stages
 {
     public class ConsoleOutputStage : OutputStage<Employee>
     {

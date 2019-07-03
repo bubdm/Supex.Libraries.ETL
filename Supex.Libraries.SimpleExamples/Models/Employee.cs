@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace SimpleExamples.Models
+namespace Supex.Libraries.Examples.Models
 {
     public class Employee
     {
